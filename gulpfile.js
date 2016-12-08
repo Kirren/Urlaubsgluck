@@ -1,9 +1,21 @@
 'use strict';
 
+// Add environment variables
+switch (process.env.NODE_ENV) {
+
+  case 'production':
+    require('dotenv').config({path: './env/prod.env'}); break;
+
+  case 'development':
+  default:
+    require('dotenv').config({path: './env/dev.env'}); break;
+
+}
+
 
 const $             = require('gulp-load-plugins')();
 const gulp          = require('gulp');
-//const gpath       = require('path');
+//const nodePath       = require('path');
 
 
 

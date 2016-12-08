@@ -12,8 +12,10 @@ module.exports = function (options) {
             server: options.src,
             tunnel: true,
             host: 'localhost',
-            port: 9000,
-            logPrefix: "Kirren"
+            port: process.env.PORT,
+            logPrefix: "Kirren",
+            open: false,
+            notify: false
 
         });
 
