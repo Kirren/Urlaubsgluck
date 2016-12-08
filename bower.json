@@ -1,0 +1,25 @@
+{
+  "name": "urlaubsgluck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kirren"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3"
+  },
+  "private": true
+}

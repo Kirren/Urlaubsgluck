@@ -1,0 +1,57 @@
+{
+  "name": "urlaubsgluck",
+  "version": "1.0.0",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development http-server -a lvh.me -p 3500 & gulp",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "author": "Kirren",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "brace-expansion": "^1.1.6",
+    "browser-sync": "^2.14.3",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bower": "0.0.13",
+    "gulp-cache": "^0.4.5",
+    "gulp-cached": "^1.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-pug-inheritance": "^0.1.1",
+    "gulp-remember": "^0.3.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-update-modul": "^1.5.5",
+    "gulp-watch": "^4.3.9",
+    "imagemin-pngquant": "^5.0.0",
+    "main-bower-files": "^2.13.1",
+    "node-bourbon": "^4.2.8",
+    "path": "^0.12.7",
+    "rimraf": "^2.5.4",
+    "stream-combiner2": "^1.1.1",
+    "through2": "^2.0.1",
+    "vinyl": "^1.2.0",
+    "vinyl-fs": "^2.4.3"
+  },
+  "description": ""
+}
