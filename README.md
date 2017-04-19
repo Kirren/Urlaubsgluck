@@ -3,10 +3,12 @@
 ## Зависимости:
 ```
 node >= 4.4.7
+gulp >= 4.0
 ```
 
 ## Установка:
 ```
+npm i gulpjs/gulp#4.0
 npm install
 ```
 
