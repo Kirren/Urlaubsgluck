@@ -1,23 +1,24 @@
 # Urlaubsgluck
 
-## Зависимости:
+## Dependencies / Зависимости:
 ```
 node >= 4.4.7
 gulp >= 4.0
 ```
 
-## Установка:
+## Installation / Установка:
+*For development you may need to install a specific gulp version in order to make it run*
 ```
 npm i gulpjs/gulp#4.0
 npm install
 ```
 
-## Настройка:
+## Setting / Настройка:
 Создать файл env/prod.env и настроить его по подобию файла env/dev.env
 
 Основные настройки хранятся в файле env/dev.env
 
-## Запуск
+## Launch / Запуск:
 В режиме development:
 ```
 npm start
