@@ -1,0 +1,24 @@
+// Third Party
+
+//@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// Custom
+
+@import "_basic/_grid.scss",
+        "_basic/_variables.scss",
+        "_basic/_mixins.scss",
+        "_basic/_fonts.scss",
+        "_basic/_typography.scss",
+        "_blocks/_header.scss",
+        "_blocks/_work.scss",
+        "_blocks/_partner.scss",
+        "_blocks/_ideas.scss",
+        "_blocks/_footer.scss";
+
+
+
+body{
+  background-color: white;
+}
+

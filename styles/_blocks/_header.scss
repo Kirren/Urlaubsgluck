@@ -1,0 +1,166 @@
+.header{
+  position: relative;
+  padding: 0 !important;
+  height: 700px;
+  color: white;
+  background: url("../img/header-promo.jpg") rgba(26,25,21,0.25) no-repeat center;
+  background-blend-mode: darken;
+
+
+  // Typography settings
+
+  font:{
+    family: $font-family-base;
+  }
+  h1{
+    font:{
+      size: 52px;
+      weight: bold;
+    }
+    padding-top: 140px;
+    margin: 0 auto;
+  }
+  .light-text{
+    padding-top: 30px;
+    font-size: 24px;
+    color: white;
+  }
+  .accent-button{margin-top: 30px;}
+
+
+  // Grid and display settings
+
+  .wrapper{
+    height: 100%;
+    .navbar{
+      .container-fluid{
+        .navbar-brand{
+          h1{
+            font:{
+              weight: bold;
+              size: 20px;
+            }
+          }
+        }
+        .navbar-right{
+          li{
+            a{
+              padding: 10px 15px;
+              border: 2px solid transparent;
+              border-radius: 25px;
+              &:active, &:hover{
+                background-color: transparent;
+                border:{
+                  width: 2px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    height: 540px;
+    text-align: center;
+    background-position: 51.5% 75%;
+    background-size: auto 103%;
+
+    h1{
+      font:{
+        size: 30px;
+        weight: bold;
+      }
+      line-height: 35px;
+      padding: 0;
+      width: 280px;
+    }
+    .light-text{
+      font-size: 18px;
+      padding: 8px 30px;
+      line-height: 23px;
+      margin-bottom: 0;
+    }
+    .accent-button{
+      width: 100%;
+      margin-top: 6px;
+      padding: 13px 0;
+    }
+
+    .content{
+      padding: 19px 5px;
+      .navbar {
+        .container-fluid {
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          align-items: center;
+
+          .navbar-header {
+            text-align: center;
+            padding-top: 120px;
+            letter-spacing: 1.1px;
+
+            .navbar-brand {
+              font-size: 20px;
+              height: 20px;
+              padding: 0;
+            }
+          }
+          .navbar-right {
+            margin: 0 auto;
+            li{
+              display: inline-block;
+              margin: 0 11px 0 -9px;
+              a{
+                padding: 6px 16px;
+                border: 2px solid transparent;
+                border-radius: 25px;
+                letter-spacing: 0;
+              }
+            }
+          }
+        }
+      }
+      .text-center{
+        padding: 7px 15px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    padding: 1.6% 17.6%;
+    h1{
+      font:{
+        size: 30px;
+        weight: bold;
+      }
+      padding-top: 45px;
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    padding: 1.6% 17.6%;
+    .navbar{
+      margin: 35px 20px 0;
+      .navbar-brand{font-size: 20px;}
+    }
+    h1 {
+      line-height: 62px;
+      padding-top: 130px;
+      width: 490px;
+    }
+    .light-text{padding-top: 20px;}
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 1.6% 17.6%;
+    h1{
+      padding-top: 140px;
+    }
+  }
+}

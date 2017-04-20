@@ -1,0 +1,62 @@
+.page {
+
+  .light-text{
+    font:{
+      family: "Roboto Light";
+      size: 14px;
+    };
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 14px;
+    font-size: 14px;
+    &:active, &:hover, &:visited {
+      color: $white-text;
+    }
+  }
+
+  h3{
+    font:{
+      size: 22px;
+      weight: bold;
+      family: Montserrat;
+    }
+    color: $header-black;
+  }
+
+  .accent-button{
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    color: white;
+    background-color: $accent-color;
+  }
+
+  .inverse-button{
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: solid 2px $accent-color;
+    font-weight: bold;
+    color: $accent-color;
+    background-color: transparent;
+    &:active, &:hover, &:visited {
+      color: $accent-color;
+    }
+  }
+
+  label{
+    padding: 5px 15px !important;
+    border-radius: 25px;
+    background-color: $accent-color;
+    letter-spacing: 3px;
+    font:{
+      weight: 200;
+      size: 10px;
+    }
+  }
+}
