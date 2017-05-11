@@ -1,6 +1,6 @@
 // Third Party
 
-@import "../../bower_components/normalize.css/normalize.css";
+//@import "../../bower_components/normalize.css/normalize.css";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 // Custom
@@ -11,6 +11,7 @@
         "_basic/_fonts.scss",
         "_basic/_typography.scss",
         "_blocks/_header.scss",
+        "_blocks/_modal.scss",
         "_blocks/_work.scss",
         "_blocks/_partner.scss",
         "_blocks/_ideas.scss",

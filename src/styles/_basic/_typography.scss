@@ -13,8 +13,8 @@
     font-weight: bold;
     line-height: 14px;
     font-size: 14px;
-    &:active, &:hover {
-      color: white;
+    &:active, &:hover, &:visited {
+      color: $white-text;
     }
   }
 
@@ -35,6 +35,9 @@
     font-weight: bold;
     color: white;
     background-color: $accent-color;
+    &:hover{
+      background-color: lighten($accent-color, 10%);
+    }
   }
 
   .inverse-button{
@@ -44,6 +47,13 @@
     font-weight: bold;
     color: $accent-color;
     background-color: transparent;
+    &:active, &:visited {
+      color: $accent-color;
+    }
+    &:hover{
+      background-color: $accent-color;
+      color: $white-text;
+    }
   }
 
   label{

@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
 .header{
   position: relative;
   padding: 0 !important;
@@ -48,7 +50,7 @@
               padding: 10px 15px;
               border: 2px solid transparent;
               border-radius: 25px;
-              &:active, &:hover{
+              &:active, &:hover, &:focus{
                 background-color: transparent;
                 border:{
                   width: 2px;
