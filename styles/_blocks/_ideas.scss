@@ -1,5 +1,5 @@
 .ideas{
-  .accent-button{padding: 15px 25px;}
+  //.accent-button{padding: 15px 25px;}
 
   .idea-container{
     display: table;
@@ -12,6 +12,7 @@
       vertical-align: middle;
       border-radius: 5px;
       border: 0 solid transparent;
+      background-blend-mode: darken;
 
       a{
         font: {
@@ -21,6 +22,19 @@
         };
         text-shadow: none;
         color: white !important;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      div{
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+        line-height: 3em;
+        color: $white-text;
       }
     }
 
@@ -28,8 +42,7 @@
   }
   @for $i from 1 through 7{
     #idea-#{$i}{
-      background: url("../img/gallery#{$i}.png") rgba(0,0,0,0.25) no-repeat center;
-      background-blend-mode: darken;
+      background: url("../img/gallery#{$i}.png") $colormask no-repeat center;
       background-size: cover;
     }
   }
@@ -37,42 +50,47 @@
   .form-wrapper{.light-text{font-size: 18px;}}
 
   @media (max-width: $screen-xs-max) {
-    h3{margin: 37px auto 16px;}
+    h3{margin: 37px 0 16px -2px;}
+
+
     .idea-container{
       margin-bottom: 10px;
       .idea-preview{
         height: 120px;
         padding-top: 7.5px;
       }
-      .form-wrapper{
-        padding: 0;
-        .form-group{
-          margin: 0 -8px 40px !important;
-          .input-wrapper{
-            padding: 0 0 10px;
-
-            .placeholder-style{
-              color: $light-grey;
-              font:{
-                weight: 100;
-                size: 14px;
-                family: "Roboto Light";
-              };
-            }
-            .form-control{
-              @include placeholder {
-                @extend .placeholder-style;
-              }
-            }
-            .search{margin-top: 15px;}
+    }
+    .form-wrapper{
+      padding: 0!important;
+      .light-text{margin-left: -5px;}
+      h3{
+        margin: 27px 0 10px -4px;
+        line-height: 26.5px;
+      }
+      .form-inline{
+        margin: 13px 8px 40px 3px;
+        .placeholder-style {
+          color: $light-grey;
+          font: {
+            weight: 100;
+            size: 14px;
+            family: "Roboto Light";
           }
         }
+        .form-control{
+          height: 40px;
+          margin-bottom: 10px;
+          @include placeholder {
+            @extend .placeholder-style;
+          }
+        }
+        .accent-button{width: 100%;}
       }
     }
   }
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .form-wrapper{padding: 0!important;}
     .idea-preview{height: 316px;}
-    .search{margin-top: 15px;}
   }
   @media (min-width: $screen-md-min) {
     .idea-preview{height: 316px;}

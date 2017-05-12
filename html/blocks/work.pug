@@ -1,64 +1,84 @@
 section.howworks.container-fluid
-    div.container-fluid
-        h3.text-center How Urlaubsglück works?
-        div.row
-            div#step1.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
-                <!-- Wrapper for slides -->
-                div.carousel-inner(role="listbox")
-                    div.item.active
-                        div.carousel-caption
-                            label.text-uppercase step 1
-                            h4 Sed leo enim, condimentum
-                            p.light-text Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
-                    div.item
-                        div.carousel-caption
-                            label.text-uppercase step 1
-                            h4 second slide
-                            p.light-text lorem
-                    div.item
-                        div.carousel-caption
-                            label.text-uppercase step 1
-                            h4 second slide
-                            p.light-text lorem
+  div.container-fluid
+    h3.text-center How Urlaubsglück works?
+    div.row
+      div#step1.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
+        <!-- Wrapper for slides -->
+        div.carousel-inner
+          div.item.active
+            div.carousel-caption
+              label.text-uppercase step 1
+              h4 Sed leo enim, condimentum
+              p.light-text Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 1
+              h4 second slide
+              p.light-text lorem
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 1
+              h4 third slide
+              p.light-text lorem
 
 
-                <!-- Left and right controls -->
-                a.carousel-control.left(href="#step1", role="button", data-slide="prev")
-                    span.arrow-left(aria-hidden="true")
+        <!-- Left and right controls -->
+        a.left.carousel-control(href="#step1", data-slide="prev")
+          span.arrow-left(aria-hidden="true")
 
-                a.carousel-control.right(href="#step1", role="button", data-slide="next")
-                    span.arrow-right(aria-hidden="true")
-
-
-            div#step2.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
-                <!-- Wrapper for slides -->
-                div.carousel-inner(role="listbox")
-                    div.item.active
-                        div.carousel-caption
-                            label.text-uppercase step 2
-                            h4 Morbi velit risus
-                            p.light-text Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
-
-                <!-- Left and right controls -->
-                a.left.carousel-control(href="#step2", role="button", data-slide="prev")
-                    span.arrow-left(aria-hidden="true")
-
-                a.right.carousel-control(href="#step2", role="button", data-slide="next")
-                    span.arrow-right(aria-hidden="true")
+        a.right.carousel-control(href="#step1", data-slide="next")
+          span.arrow-right(aria-hidden="true")
 
 
-            div#step3.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
-                <!-- Wrapper for slides -->
-                div.carousel-inner(role="listbox")
-                    div.item.active
-                        div.carousel-caption
-                            label.text-uppercase step 3
-                            h4 Sed leo enim, condimentum
-                            p.light-text Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+      div#step2.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
+        <!-- Wrapper for slides -->
+        div.carousel-inner
+          div.item.active
+            div.carousel-caption
+              label.text-uppercase step 2
+              h4 Morbi velit risus
+              p.light-text Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 2
+              h4 second slide
+              p.light-text lorem
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 2
+              h4 third slide
+              p.light-text lorem
 
-                <!-- Left and right controls -->
-                a.left.carousel-control(href="#step3", role="button", data-slide="prev")
-                    span.arrow-left(aria-hidden="true")
+        <!-- Left and right controls -->
+        a.left.carousel-control(href="#step2", data-slide="prev")
+          span.arrow-left(aria-hidden="true")
 
-                a.right.carousel-control(href="#step3", role="button", data-slide="next")
-                    span.arrow-right(aria-hidden="true")
+        a.right.carousel-control(href="#step2", data-slide="next")
+          span.arrow-right(aria-hidden="true")
+
+
+      div#step3.carousel.slide.col-xs-12.col-sm-4.col-md-4.col-lg-4(data-ride="carousel")
+        <!-- Wrapper for slides -->
+        div.carousel-inner(role="listbox")
+          div.item.active
+            div.carousel-caption
+              label.text-uppercase step 3
+              h4 Sed leo enim, condimentum
+              p.light-text Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 3
+              h4 second slide
+              p.light-text lorem
+          div.item
+            div.carousel-caption
+              label.text-uppercase step 3
+              h4 third slide
+              p.light-text lorem
+
+        <!-- Left and right controls -->
+        a.left.carousel-control(href="#step3", data-slide="prev")
+          span.arrow-left(aria-hidden="true")
+
+        a.right.carousel-control(href="#step3", data-slide="next")
+          span.arrow-right(aria-hidden="true")

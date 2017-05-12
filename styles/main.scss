@@ -11,6 +11,7 @@
         "_basic/_fonts.scss",
         "_basic/_typography.scss",
         "_blocks/_header.scss",
+        "_blocks/_modal.scss",
         "_blocks/_work.scss",
         "_blocks/_partner.scss",
         "_blocks/_ideas.scss",
@@ -20,5 +21,11 @@
 
 body{
   background-color: white;
+  .main{
+    margin:0;
+    .main-wr{
+      padding:0;
+    }
+  }
 }
 

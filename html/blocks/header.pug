@@ -7,12 +7,36 @@ section.header
                         a.navbar-brand.text-uppercase(href="#") Urlaubsglück
                     ul.row.nav.navbar-nav.navbar-right
                         li
-                            a.btn.btn-link(href="#")
+                            a.btn.btn-link(href="#" data-toggle="modal" data-target="#login-modal")
                                 span Log in
+                            div.modal.fade#login-modal(tabindex="-1" role="dialog" aria-hidden="true" style="display: none;")
+                                div.modal-dialog
+                                    div.modal-container
+                                        h1 Login to Your Account
+                                        br
+                                        form
+                                            input(type="text" name="user" placeholder="Username")
+                                            input(type="password" name="pass" placeholder="Password")
+                                            input.login.modal-submit(type="submit" name="login" value="Login")
+
+                                        div.login-help
+                                            a(href="#") Register
+                                            a(href="#") Forgot password?
+
                         li
-                            a.btn.btn-link(href="#")
+                            a.btn.btn-link(href="#" data-toggle="modal" data-target="#register-modal")
                                 span Sign up
-            div.container-fluid.text-center
+                            div.modal.fade#register-modal(tabindex="-1" role="dialog" aria-hidden="true" style="display: none;")
+                                div.modal-dialog
+                                    div.modal-container
+                                        h1 Sign up
+                                        br
+                                        form
+                                            input(type="text" name="user" placeholder="Username")
+                                            input(type="password" name="pass" placeholder="Password")
+                                            input.modal-submit(type="submit" name="login" value="Login")
+
+            div.container-fluid.text-center.headings
                 h1.text-uppercase share your holiday dreams
                 p.light-text And find the perfect partner to fullfill it
                 a.btn.accent-button(href="#", role="button") Find your holiday partner

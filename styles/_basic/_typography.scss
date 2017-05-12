@@ -35,6 +35,10 @@
     font-weight: bold;
     color: white;
     background-color: $accent-color;
+    &:hover{
+      background-color: lighten($accent-color, 10%);
+      color: $white-text;
+    }
   }
 
   .inverse-button{
@@ -44,8 +48,12 @@
     font-weight: bold;
     color: $accent-color;
     background-color: transparent;
-    &:active, &:hover, &:visited {
+    &:active, &:visited {
       color: $accent-color;
+    }
+    &:hover{
+      background-color: $accent-color;
+      color: $white-text;
     }
   }
 

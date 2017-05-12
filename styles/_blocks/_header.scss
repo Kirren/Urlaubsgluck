@@ -4,7 +4,7 @@
   height: 700px;
   color: white;
   background: url("../img/header-promo.jpg") rgba(26,25,21,0.25) no-repeat center;
-  background-blend-mode: darken;
+  background-blend-mode: soft-light;
 
 
   // Typography settings
@@ -17,15 +17,12 @@
       size: 52px;
       weight: bold;
     }
-    padding-top: 140px;
     margin: 0 auto;
   }
   .light-text{
-    padding-top: 30px;
     font-size: 24px;
     color: white;
   }
-  .accent-button{margin-top: 30px;}
 
 
   // Grid and display settings
@@ -45,10 +42,10 @@
         .navbar-right{
           li{
             a{
-              padding: 10px 15px;
+              padding: 6px 17px;
               border: 2px solid transparent;
               border-radius: 25px;
-              &:active, &:hover{
+              &:active, &:hover, &:focus{
                 background-color: transparent;
                 border:{
                   width: 2px;
@@ -67,27 +64,6 @@
     text-align: center;
     background-position: 51.5% 75%;
     background-size: auto 103%;
-
-    h1{
-      font:{
-        size: 30px;
-        weight: bold;
-      }
-      line-height: 35px;
-      padding: 0;
-      width: 280px;
-    }
-    .light-text{
-      font-size: 18px;
-      padding: 8px 30px;
-      line-height: 23px;
-      margin-bottom: 0;
-    }
-    .accent-button{
-      width: 100%;
-      margin-top: 6px;
-      padding: 13px 0;
-    }
 
     .content{
       padding: 19px 5px;
@@ -125,21 +101,51 @@
           }
         }
       }
-      .text-center{
+      .headings{
         padding: 7px 15px;
+        h1{
+          font:{
+            size: 30px;
+            weight: bold;
+          }
+          line-height: 35px;
+          padding: 0;
+          width: 280px;
+        }
+        .light-text{
+          font-size: 18px;
+          margin: 8px 30px 0 30px;
+          line-height: 23px;
+        }
+        .accent-button{
+          width: 100%;
+          margin-top: 14px;
+          padding: 13px 0;
+        }
       }
     }
   }
 
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     padding: 1.6% 17.6%;
-    h1{
-      font:{
-        size: 30px;
-        weight: bold;
+    .navbar{
+      margin: 36px 33px 36px 33px;
+      .navbar-header {
+        a {font-size: 21px;}
       }
-      padding-top: 45px;
-      width: 280px;
+      .navbar-right{margin-right: 0;}
+    }
+    .headings{
+      margin: 128px 120px 203px 114px;
+      h1{
+        font-weight: bold;
+        line-height: 62px;
+      }
+      .light-text{margin: 21px 0 0 -2px;}
+      .accent-button{
+        padding: 13px 24px;
+        margin: 31px auto;
+      }
     }
   }
 

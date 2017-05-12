@@ -10,26 +10,29 @@ html(lang="en")
         <!-- Styles -->
         link(type="text/css", rel="stylesheet", href="css/main.css")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+        link(rel="icon" type="image/png" href="img/favicon.ico")
 
-        <!-- JQuery -->
+        <!-- JS -->
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
         script(type="text/javascript", src="js/main.js")
 
         title Urlaubsglück
     body
 
-        div.container-fluid.page.row
-            div.col-xs-12.col-sm-12.col-md-offset-1.col-md-10.col-ld-offset-1.col-lg-10
+        div.container-fluid.page
+            div.row.main
+                div.col-xs-12.col-sm-12.col-md-offset-1.col-md-10.col-lg-offset-1.col-lg-10.main-wr
 
-                //= blocks/header.pug
+                    //= blocks/header.pug
 
-                div.wrapper.col-xs-12.col-sm-12.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8.info-block
+                    section.wrapper.col-xs-12.col-sm-12.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8.info-block
 
-                    //= blocks/work.pug
+                        //= blocks/work.pug
 
-                    //= blocks/partner.pug
+                        //= blocks/partner.pug
 
-                    //= blocks/ideas.pug
+                        //= blocks/ideas.pug
 
-            //= blocks/footer.pug
+                    //= blocks/footer.pug
 
