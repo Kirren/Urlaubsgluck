@@ -22,6 +22,8 @@ npm install
 В режиме development:
 ```
 npm start
+или
+gulp default
 ```
 Приложение будет доступно по адресу: http://localhost:PORT
 
