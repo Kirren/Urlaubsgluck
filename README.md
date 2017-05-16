@@ -7,30 +7,47 @@ gulp >= 4.0
 ```
 
 ## Installation / Установка:
-*For development you may need to install a specific gulp version in order to make it run*
+*For development you may need to install a specific gulp version (gulp#4.0) in order to make it run*
 ```
+npm i gulp -g
 npm i gulpjs/gulp#4.0
+```
+Required package installation / Установка необходимых пакетов:
+```
 npm install
 ```
 
 ## Setting / Настройка:
-Создать файл env/prod.env и настроить его по подобию файла env/dev.env
-
-Основные настройки хранятся в файле env/dev.env
+Create a file "env/prod.env" and set it up according to existing "env/dev.env". Main settings are stored in "env/dev.env".
+Создать файл "env/prod.env" и настроить его по подобию файла "env/dev.env". Основные настройки хранятся в файле "env/dev.env".
 
 ## Launch / Запуск:
+Development-mode:
 В режиме development:
 ```
 npm start
-или
+```
+or / или:
+```
 gulp default
 ```
+The app will be available at: http://localhost:PORT. Port – usually 8081
 Приложение будет доступно по адресу: http://localhost:PORT
 
-В режиме production:
+Production-mode / В режиме production:
 ```
 npm run build
 ```
+or / или:
+```
+gulp build
+```
+
+## Available Gulp tasks / Доступные задачи среды Gulp:
+"gulp lint"   – start debugging to see what's wrong.
+"gulp clean"  – clean production ("public") folder.
+"gulp serve"  – create server for better development.
+
 
 Single page responsive site template.
 
