@@ -1,13 +1,14 @@
 # Urlaubsgluck
 
-## Dependencies / Зависимости:
+## Dependencies and requirements/ Зависимости:
 ```
 node >= 4.4.7
-gulp >= 4.0
+gulp == 4.0
+bower
 ```
 
 ## Installation / Установка:
-*For development you may need to install a specific gulp version (gulp#4.0) in order to make it run*
+*For development you need to install a specific gulp version (gulp#4.0) in order to make it run*
 ```
 npm i gulp -g
 npm i gulpjs/gulp#4.0
@@ -15,6 +16,7 @@ npm i gulpjs/gulp#4.0
 Required package installation / Установка необходимых пакетов:
 ```
 npm install
+bower install
 ```
 
 ## Setting / Настройка:
