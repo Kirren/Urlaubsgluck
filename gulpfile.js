@@ -63,11 +63,6 @@ var config = {
     bowerPath: './bower_components'
 };
 
-gulp.task('bower', function() {
-    return $.bower()
-        .pipe(gulp.dest(config.bowerPath))
-});
-
 gulp.task('icons', function() {
     return gulp.src(config.bowerPath + '/font-awesome/fonts/**.*')
         .pipe(gulp.dest('./public/fonts'));
@@ -123,7 +118,7 @@ lazyRequireTask('fonts', './tasks/fonts', {
 // General tasks
 
 
-gulp.task('build', gulp.series('bower',
+gulp.task('build', gulp.series(
     ['images', 'icons', 'fonts', 'scripts', /*'assets',*/ 'html', 'styles']
 ));
 
