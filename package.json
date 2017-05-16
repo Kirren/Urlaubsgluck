@@ -28,7 +28,6 @@
     "dotenv": "^2.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-bower": "0.0.13",
     "gulp-cache": "^0.4.5",
     "gulp-cached": "^1.1.0",
     "gulp-clean-css": "^2.0.12",
