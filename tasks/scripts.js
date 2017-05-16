@@ -16,8 +16,12 @@ module.exports = function (options) {
             $.rigger(),
             $.debug({title: 'rigger'}),
             $.if( isDevelopment, $.sourcemaps.init() ),
+            /* Uncomment to Uglify and minimize final .js file:
+
             $.uglify(),
             $.debug({title: 'uglify'}),
+
+            */
             $.if( isDevelopment, $.sourcemaps.write('./maps') ),
             gulp.dest(options.dst),
             reload( {stream: true} )
