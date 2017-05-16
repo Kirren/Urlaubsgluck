@@ -1,3 +1,11 @@
+// Third Party
+
+//= ../../bower_components/jquery/dist/jquery.min.js
+//= ../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js
+
+
+// Custom JS
+
 $(function(){
   $('.idea-container').hover(
     function() {
@@ -13,4 +21,13 @@ $(function(){
       }, 500)
     }
   );
+
+  $('.carousel-control').hover(
+    function(){
+      $( this ).animate({opacity:'2.0'},100);
+    },
+    function() {
+      $( this ).animate({opacity:'initial'},100);
+  });
 });
+
