@@ -14,8 +14,8 @@ module.exports = function (options) {
             host: 'localhost',
             port: process.env.PORT,
             logPrefix: "Kirren",
-            open: false,
-            notify: false
+            open: true,
+            notify: true
 
         });
 

@@ -34,9 +34,9 @@ module.exports = function (options) {
             $.if(isDevelopment, $.sourcemaps.write('./maps')),
             gulp.dest(options.dst),
             reload( {stream: true} )
-        ).on('error', $.notify.onError(function(error){
+        )/*.on('error', $.notify.onError(function(error){
             return "Error: " + error.message;
-        }));
+        }))*/;
     };
 
 };
