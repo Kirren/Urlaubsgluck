@@ -62,7 +62,27 @@
     }
 
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      height: 5.6%;
+      margin-top: 6px;
+      .row{
+        margin: 0 -4px 0 -6px;
+        h5{letter-spacing: .85px;}
+        .company{
+          padding-left: 62px;
+          ul{
+            padding: 0;
+            margin-top: 12px;
+            list-style: none;
+          }
+        }
+        .partners{padding-left: 53px;}
+        .text-right{
+          margin-top:6px;
+          letter-spacing: .85px;
+          img{margin-top: 5px;}
+
+        }
+      }
+
     }
     @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
       height: 5.9%;

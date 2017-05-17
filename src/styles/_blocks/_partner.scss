@@ -3,16 +3,15 @@
     margin-bottom: 25px;
     .p-avatar{
       position: relative;
-      height: 126px;
-      width: 126px;
+      width: 120px;
       margin: 0 auto 15px;
 
       &:after{
         content: "";
         position: absolute;
         display: block;
-        top: 85px;
-        left: 85px;
+        top: 83px;
+        left: 83px;
         height: 42px;
         width: 42px;
       }
@@ -53,6 +52,7 @@
       margin:0;
       .partner-wr{
         padding: 0 49px;
+        margin-bottom: 80px;
         h3{margin: 23px 5px 9px 0;}
         .p-preview{
           margin: 22px 0;
@@ -64,6 +64,7 @@
           }
           p{line-height: 18px;}
         }
+        .inverse-button{padding: 11px 28px;}
       }
     }
   }
@@ -71,6 +72,16 @@
 
   }
   @media (min-width: $screen-lg-min) {
-
+    .partner-wr{
+      .row{
+        margin: 33px 0 12px;
+        .p-name{margin: 18px 46px 10px;}
+        .p-info{
+          margin: 0 -5px;
+          line-height: 17px;
+        }
+      }
+      .inverse-button{padding: 11px 27px;}
+    }
   }
 }

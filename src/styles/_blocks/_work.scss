@@ -130,6 +130,10 @@
     .item{height: 400px;}
   }
   @media (min-width: $screen-lg-min) {
+    .row{
+      margin-top: 35px;
+      margin-bottom: 77px;
+    }
     .item{height: 400px;}
   }
 }

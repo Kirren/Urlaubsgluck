@@ -37,8 +37,6 @@
         color: $white-text;
       }
     }
-
-
   }
   @for $i from 1 through 7{
     #idea-#{$i}{
@@ -88,9 +86,29 @@
       }
     }
   }
+
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    .form-wrapper{padding: 0!important;}
-    .idea-preview{height: 316px;}
+    .wrapper{
+      margin: 34px 0 77px 0;
+      .idea-preview{height: 310px;}
+    }
+    .form-wrapper{
+      padding: 0!important;
+      .light-text{margin-top: 30px;}
+      .form-inline{
+        margin: 36px 0 100px;
+        .form-control{
+          width: 240px;
+          height: 40px;
+          margin-right: 5px;
+        }
+        .accent-button{
+          width: 160px;
+          margin-left: 5px;
+          padding: 10px 0;
+        }
+      }
+    }
   }
   @media (min-width: $screen-md-min) {
     .idea-preview{height: 316px;}
