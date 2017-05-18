@@ -18,25 +18,10 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 $(function(){
   $('.idea-container').hover(
     function() {
-      //$( this ).children( ".idea-preview" ).css("background-blend-mode", "initial");
-      $( this ).children( ".idea-preview" ).find("div").animate({
-        bottom: "15px"
-      }, 500)
-
+      $( this ).animate( {opacity: 0.75}, 500 );
     }, function() {
-      //$( this ).children( ".idea-preview" ).css("background-blend-mode", "darken");
-      $( this ).children( ".idea-preview" ).find("div").animate({
-        bottom: "-30px"
-      }, 500)
+      $( this ).animate( {opacity: 1}, 200 );
     }
   );
-
-  $('.carousel-control').hover(
-    function(){
-      $( this ).animate({opacity:'2.0'},100);
-    },
-    function() {
-      $( this ).animate({opacity:'initial'},100);
-  });
 });
 //# sourceMappingURL=maps/main.js.map
