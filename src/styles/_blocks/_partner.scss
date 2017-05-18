@@ -72,14 +72,17 @@
 
   }
   @media (min-width: $screen-lg-min) {
+    margin-bottom: 55px;
     .partner-wr{
       .row{
         margin: 33px 0 12px;
-        .p-name{margin: 18px 46px 10px;}
-        .p-info{
-          margin: 0 -5px;
-          line-height: 17px;
+        .p-name {
+          margin: 18px 46px 10px;
         }
+        .p-info {
+            margin: 0 -5px;
+            line-height: 17px;
+          }
       }
       .inverse-button{padding: 11px 27px;}
     }
