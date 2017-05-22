@@ -1,5 +1,4 @@
 .header{
-  position: relative;
   height: 700px;
   color: white;
   background: url("../img/header-promo.jpg") rgba(26,25,21,0.25) no-repeat center;
@@ -39,7 +38,7 @@
         }
         .navbar-right{
           li{
-            a{
+            .btn-link{
               padding: 6px 17px;
               border: 2px solid transparent;
               border-radius: 25px;
