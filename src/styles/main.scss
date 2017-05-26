@@ -22,11 +22,15 @@
 body{
   background-color: white;
   .main{
-    margin:0;
     .main-wr{
-      padding:0;
       @include tablet { .info-block{margin-top: 76px;} }
     }
   }
+}
+
+
+.row.row-smaller-margin {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 

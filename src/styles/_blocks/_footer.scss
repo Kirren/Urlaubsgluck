@@ -70,7 +70,6 @@
     @media (min-width: $screen-sm-min) {
       margin-top: 6px;
       .row{
-        margin: 0 -4px 0 -6px;
         h5{letter-spacing: .85px;}
 
         .company{
@@ -91,7 +90,6 @@
 
     @media (min-width: $screen-md-min) {
       .row{
-        margin: 0px -122px 0 -36px!important;
         .company{padding-left: 80px;}
         .partners{padding-left: 63px;}
         .company, .partners {
