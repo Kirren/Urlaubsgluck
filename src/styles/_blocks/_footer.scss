@@ -55,12 +55,15 @@
           padding: 0 7px;
         }
       }
-      span {
-        margin-top: 5px;
-        margin-bottom: 6px;
-        display: block;
-        font-size: 10px;
-        letter-spacing: 0.8px;
+      .credits {
+        text-align: center;
+        span {
+          margin-top: 5px;
+          margin-bottom: 6px;
+          display: block;
+          font-size: 10px;
+          letter-spacing: 0.8px;
+        }
       }
     }
 
@@ -85,6 +88,7 @@
         }
       }
     }
+
     @media (min-width: $screen-md-min) {
       .row{
         margin: 0px -122px 0 -36px!important;
@@ -95,6 +99,6 @@
         }
       }
     }
-    //@media (min-width: $screen-lg-min) {}
+
   }
 }
