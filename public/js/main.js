@@ -23,5 +23,6 @@ $(function(){
       $( this ).animate( {opacity: 1}, 200 );
     }
   );
+
 });
 //# sourceMappingURL=maps/main.js.map
