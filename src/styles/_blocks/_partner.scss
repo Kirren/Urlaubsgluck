@@ -10,19 +10,17 @@
         content: "";
         position: absolute;
         display: block;
-        top: 83px;
-        left: 83px;
+        top: 82px;
+        left: 82px;
         height: 42px;
         width: 42px;
       }
     }
-    .p-name{font-weight: bold;}
     .p-info{color: $grey;}
-
-    @for $i from 1 through 4{
-      .p-#{$i}:after{
-        background-image: url("../img/icon#{$i}.png");
-      }
+  }
+  @for $i from 1 through 4{
+    .p-#{$i} > .p-avatar:after{
+      background-image: url("../img/icon#{$i}.png");
     }
   }
 
@@ -30,17 +28,29 @@
 
 
   @media (max-width: $screen-xs-max) {
-    h3{margin: 27px 0 16px;}
-    .p-preview {
-      margin-bottom: 11px;
-      .p-avatar{
-        margin: 0 auto 14px;
-        height: 122px;
-        width: 122px;
-      }
-      .p-info{margin: 0 5px 10px;}
+    h3{
+      margin: 25.5px 11px 16px;
+      width: 262px;
+      letter-spacing: -1px;
+      line-height: 25px;
     }
+    .row{
+      display: flex;
+      flex-direction: column;
+      .p-preview {
+        margin-bottom: 18px;
+        .p-avatar { margin-bottom: 17px; }
+        .p-info {
+          margin: 0 35px 10px;
+          line-height: 17px;
+        }
 
+      }
+      .p-1 { order: 0; }
+      .p-2 { order: 2; }
+      .p-3 { order: 1; }
+      .p-4 { order: 3; }
+    }
     .btn{
       padding: 11px 69px;
       letter-spacing: 0.13px;
@@ -53,18 +63,23 @@
       .partner-wr{
         padding: 0 49px;
         margin-bottom: 80px;
-        h3{margin: 23px 5px 9px 0;}
-        .p-preview{
-          margin: 22px 0;
-          padding: 0 18px;
-          .p-avatar{
-            margin-bottom: 20px;
-            height: 120px;
-            width: 120px;
+        .row {
+          display: block;
+          h3 { margin: 23px 5px 9px 0; }
+          .p-preview {
+            margin: 22px 0;
+            padding: 0 18px;
+            .p-avatar {
+              margin-bottom: 20px;
+              height: 120px;
+              width: 120px;
+            }
+            p {
+              line-height: 18px;
+            }
           }
-          p{line-height: 18px;}
+          .inverse-button { padding: 11px 28px; }
         }
-        .inverse-button{padding: 11px 28px;}
       }
     }
   }

@@ -46,8 +46,10 @@
     @media (max-width: $screen-xs-max) {
       height: 4.9%;
       text-align: center;
-      h5{margin-bottom: 14px;}
+      h5{ margin-bottom: 14px; }
+      h6{ font-weight: 400; }
       ul {
+        margin-top: -9px;
         padding: 0;
         li {
           display: inline-block;

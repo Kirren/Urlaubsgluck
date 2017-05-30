@@ -10,10 +10,7 @@
 
   font:{family: $font-family-base;}
   h1{
-    font:{
-      size: 52px;
-      weight: bold;
-    }
+    font-weight: bold;
     margin: 0 auto;
   }
   .light-text{
@@ -26,33 +23,23 @@
 
   .wrapper{
     height: 100%;
-    .navbar{
-      .navbar-nav{
-        margin: 0;
-        .navbar-brand{
-          h1{
-            font:{
-              weight: bold;
-              size: 20px;
+    .navbar-right{
+      margin: 0;
+      .btn-link{
+          border: 2px solid transparent;
+          border-radius: 25px;
+          &:active, &:hover, &:focus{
+            background-color: transparent;
+            border:{
+              width: 2px;
+              color: white;
             }
           }
         }
-        .navbar-right{
-          li{
-            .btn-link{
-              padding: 6px 17px;
-              border: 2px solid transparent;
-              border-radius: 25px;
-              &:active, &:hover, &:focus{
-                background-color: transparent;
-                border:{
-                  width: 2px;
-                  color: white;
-                }
-              }
-            }
-          }
-        }
+    }
+    .headings{
+      h1{
+        font-weight: bold;
       }
     }
   }
@@ -66,78 +53,80 @@
     .content{
       padding: 19px 5px;
       .navbar {
-        .navbar-nav {
-          width: 100%;
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: space-between;
-          align-items: center;
-
-          .navbar-header {
-            text-align: center;
-            padding-top: 120px;
-            letter-spacing: 1.1px;
-
-            .navbar-brand {
-              font-size: 20px;
-              height: 20px;
-              padding: 0;
-            }
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-header {
+          text-align: center;
+          padding-top: 120px;
+          .navbar-brand {
+            font-size: 20px;
+            height: 20px;
+            padding: 0;
           }
-          .navbar-right {
-            margin: 0 auto;
-            li{
-              display: inline-block;
-              margin: 0 11px 0 -9px;
-              a{
-                padding: 6px 16px;
-                border: 2px solid transparent;
-                border-radius: 25px;
-                letter-spacing: 0;
-              }
+        }
+        .navbar-right {
+          margin: 0 auto;
+          li{
+            display: inline-block;
+            margin: 0 10px 0 -10px;
+            .btn-link{
+              padding: 6px 12.5px;
+              border: 2px solid transparent;
+              border-radius: 25px;
+              letter-spacing: 0;
             }
           }
         }
       }
       .headings{
-        padding: 7px 15px;
+        padding: 7px 0;
         h1{
-          font:{
-            size: 30px;
-            weight: bold;
-          }
+          font-size: 30px;
           line-height: 35px;
-          padding: 0;
-          width: 280px;
+          letter-spacing: -1px;
         }
         .light-text{
+          margin: 9px auto;
+          width: 230px;
           font-size: 18px;
-          margin: 8px 30px 0 30px;
-          line-height: 23px;
+          line-height: 21px;
         }
         .accent-button{
-          width: 100%;
-          margin-top: 14px;
-          padding: 13px 0;
+          margin-top: 6px;
+          padding: 13px 50px;
+          font-weight: normal;
         }
       }
     }
   }
 
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @media (max-width: $screen-sm-max) {
     .navbar{
       padding: 36px 33px 36px 33px;
       margin: 0;
       .navbar-header {
-        a {font-size: 21px;}
+        a {
+          font-size: 19.5px;
+          letter-spacing: -0.1px;
+        }
       }
-      .navbar-right{margin-right: 0;}
+      .navbar-right{
+        margin-right: 15px;
+        .btn-link{
+          padding: 6.5px 17px;
+          font-weight: 400;
+        }
+      }
     }
     .headings{
-      margin: 128px 120px 203px 114px;
+      margin: 92px 120px 205px 114px;
       h1{
         font-weight: bold;
         line-height: 62px;
+        font-size: 52px;
       }
       .light-text{margin: 21px 0 0 -2px;}
       .accent-button{
