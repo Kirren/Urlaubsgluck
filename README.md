@@ -2,13 +2,13 @@
 **Single page responsive site template.**
 
 Features used:
- _ Node
-  Gulp
-  Bower
-  Pug
-  SCSS
-  Bootstrap
-  JavaScript_
+ _Node_
+ _Gulp_
+ _Bower_
+ _Pug_
+ _SCSS_
+ _Bootstrap_
+ _JavaScript_
   
 ## Dependencies and requirements/ Зависимости:
 ```
