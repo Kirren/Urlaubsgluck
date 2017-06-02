@@ -9,10 +9,7 @@
   // Typography settings
 
   font:{family: $font-family-base;}
-  h1{
-    font-weight: bold;
-    margin: 0 auto;
-  }
+  h1 { margin: 0 auto; }
   .light-text{
     font-size: 24px;
     color: white;
@@ -23,25 +20,22 @@
 
   .wrapper{
     height: 100%;
-    .navbar-right{
+    .navbar-right {
       margin: 0;
       .btn-link{
-          border: 2px solid transparent;
-          border-radius: 25px;
-          &:active, &:hover, &:focus{
+        border: 2px solid transparent;
+        border-radius: 25px;
+        &:active, &:hover, &:focus{
             background-color: transparent;
             border:{
               width: 2px;
               color: white;
             }
           }
-        }
-    }
-    .headings{
-      h1{
-        font-weight: bold;
       }
     }
+    .navbar-brand, .btn-link, .accent-button { font-weight: 400;}
+    h1 { font-size: 52px; }
   }
 
   @media (max-width: $screen-xs-max) {
@@ -51,8 +45,9 @@
     background-size: auto 103%;
 
     .content{
-      padding: 19px 5px;
+      padding: 0 5px;
       .navbar {
+        padding: 18px 10px;
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
@@ -60,11 +55,10 @@
         align-items: center;
         .navbar-header {
           text-align: center;
-          padding-top: 120px;
+          padding-top: 105px;
           .navbar-brand {
             font-size: 20px;
-            height: 20px;
-            padding: 0;
+            letter-spacing: 1px;
           }
         }
         .navbar-right {
@@ -73,7 +67,7 @@
             display: inline-block;
             margin: 0 10px 0 -10px;
             .btn-link{
-              padding: 6px 12.5px;
+              padding: 6px 16.5px;
               border: 2px solid transparent;
               border-radius: 25px;
               letter-spacing: 0;
@@ -82,11 +76,13 @@
         }
       }
       .headings{
-        padding: 7px 0;
+        padding: 0;
+        margin: -7px 0;
         h1{
           font-size: 30px;
-          line-height: 35px;
+          line-height: 36px;
           letter-spacing: -1px;
+          margin: 0;
         }
         .light-text{
           margin: 9px auto;
@@ -95,9 +91,8 @@
           line-height: 21px;
         }
         .accent-button{
-          margin-top: 6px;
+          margin-top: 7px;
           padding: 13px 50px;
-          font-weight: normal;
         }
       }
     }
@@ -108,27 +103,27 @@
       padding: 36px 33px 36px 33px;
       margin: 0;
       .navbar-header {
-        a {
+        .navbar-brand {
           font-size: 19.5px;
-          letter-spacing: -0.1px;
+          letter-spacing: 0.9px;
         }
       }
       .navbar-right{
         margin-right: 15px;
-        .btn-link{
-          padding: 6.5px 17px;
-          font-weight: 400;
-        }
+        .btn-link{ padding: 6.5px 17px; }
       }
     }
     .headings{
       margin: 92px 120px 205px 114px;
       h1{
-        font-weight: bold;
         line-height: 62px;
-        font-size: 52px;
+        letter-spacing: -1.3px;
+        font-weight: 700;
       }
-      .light-text{margin: 21px 0 0 -2px;}
+      .light-text{
+        margin: 21px 0 0;
+        letter-spacing: 0.2px;
+      }
       .accent-button{
         padding: 13px 24px;
         margin: 31px auto;
@@ -137,22 +132,27 @@
   }
 
   @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    .navbar{
-      margin: 35px 20px 0;
-      .navbar-brand{font-size: 20px;}
+    .navbar-brand { font-size: 20px; }
+    .headings{
+      margin: 140px 160px;
+      h1 {
+        font-weight: bold;
+        line-height: 62px;
+      }
+      * { margin-bottom: 20px; }
     }
-    h1 {
-      line-height: 62px;
-      padding-top: 130px;
-      width: 490px;
-    }
-    .light-text{padding-top: 20px;}
   }
 
   @media (min-width: $screen-lg-min) {
     .content{
       margin: 37px 7.9vw 0 6.7vw;
-      .navbar-brand{
+      .navbar-right {
+        .btn-link {
+          line-height: normal;
+          padding: 7px 17px;
+        }
+      }
+      .navbar-brand {
         margin-top: -2px;
         font-size: 20px;
         letter-spacing: 1px;
@@ -162,13 +162,14 @@
         h1 {
           padding-top: 106px;
           line-height: 63px;
+          letter-spacing: -0.2px;
         }
         .light-text{
           margin: 21px 0;
           letter-spacing: 0.15px;
         }
         .accent-button{
-          padding: 14px 23px;
+          padding: 13px 24px;
           margin-top: 10px;
         }
       }

@@ -22,8 +22,20 @@
 body{
   background-color: white;
   .main{
-    .main-wr{
-      @include tablet { .info-block{margin-top: 76px;} }
+    .main-wr {
+      @include tablet {
+        .info-block {
+          margin-top: 96px;
+          .howworks { margin-bottom: 80px; }
+          .partner { margin-bottom: 95px; }
+          .ideas { margin-bottom: 77px; }
+        }
+      }
+      @include desktop {
+        .info-block {
+          margin-top: 76px;
+        }
+      }
     }
   }
 }

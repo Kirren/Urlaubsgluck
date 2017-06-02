@@ -16,7 +16,6 @@
 
       a{
         font: {
-          weight: bold;
           size: 22px;
           family: $font-family-base;
         };
@@ -53,7 +52,6 @@
     h3{
       margin: 36px -7px 13px;
       width: 306px;
-      letter-spacing: -1px;
       line-height: 26.5px;
     }
     .idea-container{
@@ -122,6 +120,7 @@
       }
     }
   }
+
   @media (min-width: $screen-md-min) {
     h3{margin: 43px 32% 35px 31.5%;}
     .idea-preview{height: 316px;}

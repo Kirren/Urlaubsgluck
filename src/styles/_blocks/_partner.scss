@@ -31,7 +31,6 @@
     h3{
       margin: 25.5px 11px 16px;
       width: 262px;
-      letter-spacing: -1px;
       line-height: 25px;
     }
     .row{
@@ -61,11 +60,10 @@
     .text-center{
       margin:0;
       .partner-wr{
-        padding: 0 49px;
-        margin-bottom: 80px;
+        padding: 0;
+        h3 { margin-left: -6px; }
         .row {
           display: block;
-          h3 { margin: 23px 5px 9px 0; }
           .p-preview {
             margin: 22px 0;
             padding: 0 18px;
@@ -78,14 +76,26 @@
               line-height: 18px;
             }
           }
-          .inverse-button { padding: 11px 28px; }
         }
+      }
+      .inverse-button {
+        padding: 11px 27.5px;
+        margin-left: -3px;
       }
     }
   }
-  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .partner-wr{
+      .row {
+        padding:{
+          top: 20px;
+          bottom: 20px;
+        };
+      }
+    }
   }
+
   @media (min-width: $screen-lg-min) {
     margin-bottom: 55px;
     .partner-wr{
