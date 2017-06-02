@@ -1,5 +1,15 @@
 # Urlaubsgluck
+**Single page responsive site template.**
 
+Features used:
+ _ Node
+  Gulp
+  Bower
+  Pug
+  SCSS
+  Bootstrap
+  JavaScript_
+  
 ## Dependencies and requirements/ Зависимости:
 ```
 node >= 4.4.7
@@ -49,16 +59,6 @@ gulp build
 "gulp lint"   – start debugging to see what's wrong.
 "gulp clean"  – clean production ("public") folder.
 "gulp serve"  – create server for better development.
+"gulp default"  – open development environment.
 
 
-Single page responsive site template.
-
-Features used:
-  NPM
-  Gulp
-  Bower
-  Pug
-  SCSS
-  JavaScript
-  
-Work in progress.
