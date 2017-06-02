@@ -1,7 +1,5 @@
 .footer{
-  font:{
-    family: $font-family-base;
-  }
+  font-family: $font-family-base;
 
   hr{
     border-top: 5px solid #ff4e50;
@@ -10,11 +8,7 @@
   }
 
   .content {
-    margin: -14px 0 25px 0;
 
-    h5, h6 {
-      font-weight: bold;
-    }
     h5 {
       font-size: 16px;
       color: $accent-color;
@@ -36,18 +30,16 @@
 
     span {
       color: $light-grey;
-      font: {
-        weight: bold;
-        size: 10px;
-      }
+      font-size: 10px;
     }
 
 
     @media (max-width: $screen-xs-max) {
       height: 4.9%;
       text-align: center;
-      h5{margin-bottom: 14px;}
+      h5 { margin-bottom: 14px; }
       ul {
+        margin-top: -9px;
         padding: 0;
         li {
           display: inline-block;
@@ -55,20 +47,26 @@
           padding: 0 7px;
         }
       }
-      span {
-        margin-top: 5px;
-        margin-bottom: 6px;
-        display: block;
-        font-size: 10px;
-        letter-spacing: 0.8px;
+      .credits {
+        text-align: center;
+        span {
+          margin-top: 5px;
+          margin-bottom: 11px;
+          display: block;
+          font-size: 10px;
+          letter-spacing: 0.8px;
+        }
       }
     }
 
     @media (min-width: $screen-sm-min) {
-      margin-top: 6px;
-      .row{
-        margin: 0 -4px 0 -6px;
-        h5{letter-spacing: .85px;}
+      margin:{
+        top: 6px;
+        left: 15px;
+        right: 15px;
+      }
+      .row {
+        h5 {letter-spacing: .85px;}
 
         .company{
           padding-left: 62px;
@@ -78,23 +76,31 @@
           }
         }
         .partners{padding-left: 53px;}
-        .text-right{
+        .text-right {
           margin-top:6px;
           letter-spacing: .85px;
-          img{margin-top: 5px;}
+          img { margin-top: 5px; }
         }
       }
     }
+
     @media (min-width: $screen-md-min) {
-      .row{
-        margin: 0px -122px 0 -36px!important;
-        .company{padding-left: 80px;}
-        .partners{padding-left: 63px;}
+      margin:{
+        top: 5px;
+        left: 99px;
+        right: 101px;
+      }
+      .row {
+        .company { padding-left: 80px; }
+        .partners { padding-left: 63px; }
         .company, .partners {
-          h6 {margin: 12px 0 -2px !important;}
+          h6 { margin: 12px 0 -2px !important; }
         }
       }
     }
-    //@media (min-width: $screen-lg-min) {}
+
+    @media (min-width: $screen-lg-min) {
+      .company, .partners { padding-left: 94px; }
+    }
   }
 }

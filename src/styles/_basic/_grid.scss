@@ -3,11 +3,6 @@
   padding-right: 0 !important;
 }
 
-.page{
-  @extend .no-padding;
-  section{@extend .no-padding;}
-}
-
 @media (max-width: $screen-xs-max) {
   .no-padding{
     padding-left: 0 !important;

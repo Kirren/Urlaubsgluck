@@ -16,7 +16,6 @@
 
       a{
         font: {
-          weight: bold;
           size: 22px;
           family: $font-family-base;
         };
@@ -47,22 +46,33 @@
 
   .form-wrapper{.light-text{font-size: 18px;}}
 
+
+
   @media (max-width: $screen-xs-max) {
-    h3{margin: 37px 0 16px -2px;}
-
-
+    h3{
+      margin: 36px -7px 13px;
+      width: 306px;
+      line-height: 26.5px;
+    }
     .idea-container{
       margin-bottom: 10px;
       .idea-preview{
         height: 120px;
-        padding-top: 7.5px;
+        padding-top: 10px;
+        padding-bottom: 4px;
+        line-height: 2em;
+        a{ font-weight: 400; }
+      }
+      #idea-3{
+        padding: 0 46px;
+        line-height: 1.9em;
       }
     }
     .form-wrapper{
       padding: 0!important;
       .light-text{margin-left: -5px;}
       h3{
-        margin: 27px 0 10px -4px;
+        margin: 27px -10px 10px;
         line-height: 26.5px;
       }
       .form-inline{
@@ -87,7 +97,7 @@
     }
   }
 
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @media (min-width: $screen-sm-min) {
     .wrapper{
       margin: 34px 0 77px 0;
       .idea-preview{height: 310px;}
@@ -110,6 +120,7 @@
       }
     }
   }
+
   @media (min-width: $screen-md-min) {
     h3{margin: 43px 32% 35px 31.5%;}
     .idea-preview{height: 316px;}

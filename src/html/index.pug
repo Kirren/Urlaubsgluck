@@ -17,17 +17,19 @@ html(lang="en")
 
         div.container-fluid.page
             div.row.main
-                div.col-xs-12.col-sm-12.col-md-12.col-lg-12.main-wr
+                div.main-wr
 
                     //= blocks/header.pug
 
-                    section.wrapper.col-xs-12.col-sm-12.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8.info-block
+                    div.info-block
 
-                        //= blocks/work.pug
+                        section.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
 
-                        //= blocks/partner.pug
+                            //= blocks/work.pug
 
-                        //= blocks/ideas.pug
+                            //= blocks/partner.pug
+
+                            //= blocks/ideas.pug
 
                     //= blocks/footer.pug
 
