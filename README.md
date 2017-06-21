@@ -1,5 +1,7 @@
 # Urlaubsgluck
 
+Preview at: https://kirren.github.io/Urlaubsgluck/public/
+
 ## Dependencies and requirements/ Зависимости:
 ```
 node >= 4.4.7
